@@ -50,7 +50,7 @@
 ## ⚡ Quick Start
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.11+
 - PostgreSQL
 - [OpenAI API Key](https://platform.openai.com/)
 
@@ -59,3 +59,34 @@
    ```bash
    git clone https://github.com/Hosseinglm/SEO-DataFlow.git
    cd SEO-DataFlow
+2. Install dependencies:
+pip install -r requirements.txt
+
+3. Configure .env:
+DATABASE_URL=postgresql://user:password@localhost:5432/seodataflow
+OPENAI_API_KEY=your_key_here
+
+4. Initialize DB:
+python scripts/init_db.py
+
+5. Launch:
+streamlit run app.py
+
+## 📈 Usage Example
+
+### 1.Run SEO Analysis:
+# Input URL via Streamlit interface
+st.text_input("Enter Website URL", "https://example.com")
+
+# Forecast Trends:
+from prophet import Prophet
+model = Prophet()
+model.fit(historical_seo_data)  # Predict rankings for next quarter
+
+# Generate Report:
+image
+
+📜 License
+Distributed under the MIT License. See LICENSE.
+
+
