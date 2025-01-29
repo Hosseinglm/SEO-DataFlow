@@ -75,15 +75,15 @@ streamlit run app.py
 ## 📈 Usage Example
 
 ### 1.Run SEO Analysis:
-# Input URL via Streamlit interface
+###### Input URL via Streamlit interface
 st.text_input("Enter Website URL", "https://example.com")
 
-# Forecast Trends:
+##### Forecast Trends:
 from prophet import Prophet
 model = Prophet()
 model.fit(historical_seo_data)  # Predict rankings for next quarter
 
-# Generate Report:
+##### Generate Report:
 ![Dashboard](assets/1.png)
 
 📜 License
