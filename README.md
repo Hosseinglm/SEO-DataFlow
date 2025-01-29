@@ -11,9 +11,9 @@
 
 ## 🖼️ Screenshots
 
-| Dashboard Overview | SEO Analysis Example |
-|--------------------|----------------------|
-| ![Dashboard](assets/dashboard-preview.png) | ![Analysis](assets/seo-analysis-example.png) |
+| Dashboard Overview         | SEO Analysis Example      |
+|----------------------------|---------------------------|
+| ![Dashboard](assets/1.png) | ![Analysis](assets/2.png) |
 
 ---
 
@@ -84,7 +84,7 @@ model = Prophet()
 model.fit(historical_seo_data)  # Predict rankings for next quarter
 
 # Generate Report:
-image
+![Dashboard](assets/1.png)
 
 📜 License
 Distributed under the MIT License. See LICENSE.
